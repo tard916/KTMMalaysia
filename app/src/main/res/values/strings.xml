@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BMC208_Assignment2</string>
+    <string name="activity1">Malaysia KTM</string>
+    <string name="from">From :</string>
+    <string name="search">Search</string>
+    <string name="to">To :</string>
+    <string name="ktm_assignment">KTM Assignment</string>
+    <string name="admin_login_1">Admin Login 1</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="todo">TODO</string>
+
+</resources>

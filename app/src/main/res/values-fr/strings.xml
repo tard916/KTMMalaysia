@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BMC208_Assignment2</string>
+    <string name="activity1">Malaysia KTM</string>
+    <string name="from">De :</string>
+    <string name="search">Chercher</string>
+    <string name="to">À :</string>
+    <string name="ktm_assignment">KTM Assignment</string>
+    <string name="admin_login_1">Admin identification 1</string>
+    <string name="admin_login">Admin identification</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">S\'dentifier</string>
+    <string name="forgot_password">Vous avez oublier votre mot de passe</string>
+    <string name="todo">TODO</string>
+</resources>
