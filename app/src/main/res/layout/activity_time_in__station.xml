@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a224tech.bmc208_assignment2.Time_in_Station">
+
+    <TextView
+        android:id="@+id/station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/time_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/station_name"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true">
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        app:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="goToAddTime"
+        />
+
+</RelativeLayout>

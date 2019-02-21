@@ -21,8 +21,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Admin_Home" />
-        <activity android:name=".Login"></activity>
+        <activity
+            android:name=".Admin_Home"
+            android:label="Database Summary"
+            android:theme="@style/AppTheme.Admin_Home" />
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SearchResult" />
+        <activity
+            android:name=".ManageFares"
+            android:parentActivityName=".Admin_Home" />
+        <activity
+            android:name=".ManageTimeTable"
+            android:label="@string/title_activity_manage_time_table"
+            android:parentActivityName=".Admin_Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DisplayStationByRoute"
+            android:parentActivityName=".ManageTimeTable"
+            />
+        <activity android:name=".Time_in_Station"
+            />
+        <activity android:name=".AddTimes"
+            ></activity>
     </application>
 
 </manifest>

@@ -28,7 +28,7 @@ public class Login extends Activity {
 
     private Button btnLogin;
 
-    private EditText inputEmail;
+    private EditText inputName;
     private EditText inputPassword;
 
     String username = "";
@@ -40,7 +40,7 @@ public class Login extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        inputEmail = (EditText) findViewById(R.id.username);
+        inputName = (EditText) findViewById(R.id.username);
         inputPassword = (EditText) findViewById(R.id.password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
@@ -48,11 +48,11 @@ public class Login extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                String email = inputEmail.getText().toString().trim();
+                String name = inputName.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
 
                 // Check for empty data in the form
-                if (!email.isEmpty() && !password.isEmpty()) {
+                if (!name.isEmpty() && !password.isEmpty()) {
                     submitLogin(view);
                 } else {
                     // Prompt user to enter credentials
@@ -67,7 +67,7 @@ public class Login extends Activity {
 
     public void submitLogin(View view)
     {
-        username = inputEmail.getText().toString();
+        username = inputName.getText().toString();
         password = inputPassword.getText().toString();
 
         //Toast.makeText(getApplicationContext(),username+" "+password, Toast.LENGTH_LONG).show();
@@ -82,10 +82,10 @@ public class Login extends Activity {
         protected String doInBackground(String... arg0) {
 
             try {
-
-                URL url = new URL("http://10.125.193.97/testing/login.php"); // here is your URL path
+                //URL url = new URL("http://192.168.43.146/testing/login.php"); // here is your URL path
+                //URL url = new URL("http://10.1.15.67/testing/login.php"); // here is your URL path
                 //URL url = new URL("http://192.168.1.140/testing/login.php"); // here is your URL path phone
-
+                 URL url = new URL("http://www.224tech.com/KTM_ASSIGN/login.php"); // here is your URL path
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("name", username);
                 postDataParams.put("pass", password);
@@ -152,6 +152,7 @@ public class Login extends Activity {
             String check = "You login successfully" ;
             if (Objects.equals(result, check)){
                 Intent intent = new Intent(Login.this, Admin_Home.class);
+                intent.putExtra("userName",username);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), result,
                         Toast.LENGTH_SHORT).show();

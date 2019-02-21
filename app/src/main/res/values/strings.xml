@@ -11,6 +11,25 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="malaysia_ktm_map">Malaysia KTM Map</string>
+    <string name="destination_from">From:</string>
+    <string name="destination_to">To:</string>
+    <string name="next_train_time">Train Time:</string>
+    <string name="ticket_price">Ticket Price:</string>
+    <string name="title_activity_manage_time_table">ManageTimeTable</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="number_of_station">Number of station</string>
+    <string name="station_name">Station Name:</string>
+    <string name="train_number">Train Number:</string>
+    <string name="arrival_time">Arrival Time:</string>
+    <string name="number_of_time">number_of_time</string>
+    <string name="number_of_route">number_of_route</string>
+    <string name="number_of_fares">number_of_fares</string>
+    <string name="number_of_train">number_of_train</string>
+    <string name="database_summary">Database Summary</string>
+    <string name="next_departer_time">Next departure Time</string>
     <string name="todo">TODO</string>
 
 </resources>
